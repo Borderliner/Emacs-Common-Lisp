@@ -41,8 +41,11 @@
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
     paredit
 
-    ;;SLIME, a Common Lisp REPL
+    ;; SLIME, a Common Lisp REPL
     slime
+
+    ;; NeoTree, file viewer
+    neotree
 
     ;; allow ido usage in as many contexts as possible. see
     ;; customizations/navigation.el line 23 for a description
