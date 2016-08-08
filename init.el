@@ -6,7 +6,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(add-to-list 'package-archives
+;;(add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
@@ -75,6 +75,10 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+;; Set Common-Lisp compiler's path
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
+
 
 ;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
 ;; to load them.
@@ -120,5 +124,5 @@
 (load "elisp-editing.el")
 
 ;; Langauage-specific
-;;(load "setup-lisp.el")
+(load "setup-lisp.el")
 (load "setup-js.el")
