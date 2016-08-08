@@ -120,5 +120,5 @@
 (load "elisp-editing.el")
 
 ;; Langauage-specific
-(load "setup-lisp.el")
+;;(load "setup-lisp.el")
 (load "setup-js.el")
